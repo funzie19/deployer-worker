@@ -12,6 +12,7 @@ Role Variables
 --------------
 
 deployer_username : Username to be created
+
 	deployer_username: jkregloh
 
 deployer_public_key : Public key of user
