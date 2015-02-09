@@ -1,0 +1,14 @@
+- name: "Create .ssh directory"
+  sudo: true
+#  sudo_user: "{{ deployer_username }}"
+  file:
+   state=directory
+   path=/home/{{ deployer_username }}/.ssh
+   mode=700
+   owner={{ deployer_username }}
+   group={{ deployer_username }}
+
+- name: "Set public key"
+  authorized_key:
+   user={{ deployer_username }}
+   key={{ deployer_public_key }}

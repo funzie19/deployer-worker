@@ -1,0 +1,12 @@
+  - name: "Add the deployer user"
+    sudo: true
+    user: 
+      name={{ deployer_username }}
+      createhome=yes
+      shell=/bin/bash
+      comment="Ansible deployer user"
+
+  - name: "Lock the deployer user"
+    sudo: true
+    shell:
+      passwd -l {{ deployer_username }}
