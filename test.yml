@@ -2,6 +2,7 @@
   remote_user: root
   vars:
     deployer_username: testuser
-    deployer_public_key: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC3u1bdRPITQygANTCxCI+CZptak8VgYnF21ddVCbW4s/EMrphyl8wpl17OU76euI4E/OJfMkrq9CI9hki9GeXm3fZip7AfcFy7qbUkHEXDElj8SmJD/kzt9K7Io/Hd/Le+d8k8ZZkEtqm7fQCH8e9PHMGU1f9l6WE29iHHHEy7ayRM2Hwb21bGaFTZ55VPo/Ks9w09kZAfQaNhM+LELs1Cwf282HAKnnjBB/xN1DuVsf/ZdR4Cj+/EnZX4+2VcK45od2mZtbN+nk+TesSp5cWGqwCyBFd0OmjNhg1DQmck3BcMTgT+3i9ZmVJi6uNrV4Jc99rlWMwWul86tvepB6Ep testuser@centos7.base"
+    deployer_public_key: |+
+      ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC3u1bdRPITQygANTCxCI+CZptak8VgYnF21ddVCbW4s/EMrphyl8wpl17OU76euI4E/OJfMkrq9CI9hki9GeXm3fZip7AfcFy7qbUkHEXDElj8SmJD/kzt9K7Io/Hd/Le+d8k8ZZkEtqm7fQCH8e9PHMGU1f9l6WE29iHHHEy7ayRM2Hwb21bGaFTZ55VPo/Ks9w09kZAfQaNhM+LELs1Cwf282HAKnnjBB/xN1DuVsf/ZdR4Cj+/EnZX4+2VcK45od2mZtbN+nk+TesSp5cWGqwCyBFd0OmjNhg1DQmck3BcMTgT+3i9ZmVJi6uNrV4Jc99rlWMwWul86tvepB6Ep testuser@centos7.base
   tasks:
     - include: tasks/main.yml
