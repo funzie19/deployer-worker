@@ -7,4 +7,5 @@ before_install:
 install:
   - pip install ansible==1.7.1
 script:
-  - echo localhost > lh
+  - echo localhost > inventory
+  - ansible-playbook -i inventory test.yml -c local -s
