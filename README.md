@@ -1,4 +1,4 @@
-# deployer-worker [![Build Status](https://travis-ci.org/funzie19/deployer-worker?branch=master)](https://travis-ci.org/funzie19/deployer-worker)
+# deployer-worker [![Build Status](https://travis-ci.org/funzie19/deployer-worker.svg?branch=master)](https://travis-ci.org/funzie19/deployer-worker)
 Generates an Ansible deployer worker. This will be a user created on the remote machine to do all Ansible tasks.
 
 =========
