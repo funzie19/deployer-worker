@@ -10,3 +10,19 @@
     sudo: true
     shell:
       passwd -l {{ deployer_username }}
+
+  - name: "Set public key"
+    authorized_key:
+     user={{ deployer_username }}
+     key="{{ deployer_public_key }}"
+
+  - name: "Add deployer user to sudo"
+    lineinfile: 
+      dest=/etc/sudoers.d/{{ deployer_username }}
+      owner=root
+      group=root
+      mode=0440
+      line="{{ deployer_username }} ALL=(ALL) NOPASSWD:ALL"
+      state=present
+      create=yes
+      validate='visudo -cf %s'

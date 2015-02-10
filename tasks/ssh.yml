@@ -1,4 +1,1 @@
-- name: "Set public key"
-  authorized_key:
-   user={{ deployer_username }}
-   key="{{ deployer_public_key }}"
+
